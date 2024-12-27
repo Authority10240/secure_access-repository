@@ -19,7 +19,7 @@ class SecureAccessVisitationsModel with _$SecureAccessVisitationsModel {
     required String? unit,
     required String? time,
     required String? month,
-    required String? timeStamp,
+    required DateTime? timeStamp,
     required String? outDate,
     required String? outTime,
     required String? year,
