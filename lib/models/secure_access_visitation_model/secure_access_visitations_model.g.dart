@@ -20,6 +20,11 @@ _$SecureAccessVisitationsModelImpl _$$SecureAccessVisitationsModelImplFromJson(
       date: json['date'] as String?,
       unit: json['unit'] as String?,
       time: json['time'] as String?,
+      month: json['month'] as String?,
+      timeStamp: json['timeStamp'] as String?,
+      outDate: json['outDate'] as String?,
+      outTime: json['outTime'] as String?,
+      year: json['year'] as String?,
       id: json['id'] as String?,
     );
 
@@ -37,5 +42,10 @@ Map<String, dynamic> _$$SecureAccessVisitationsModelImplToJson(
       'date': instance.date,
       'unit': instance.unit,
       'time': instance.time,
+      'month': instance.month,
+      'timeStamp': instance.timeStamp,
+      'outDate': instance.outDate,
+      'outTime': instance.outTime,
+      'year': instance.year,
       'id': instance.id,
     };

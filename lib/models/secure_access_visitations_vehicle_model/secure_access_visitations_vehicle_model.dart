@@ -15,6 +15,7 @@ class SecureAccessVisitationsVehicleModel with _$SecureAccessVisitationsVehicleM
     required String? expiryYear,
     required String? make,
     required String? model,
+    required String? id,
     required String? identificationNumber,
     required String? date,
     required String? unit,

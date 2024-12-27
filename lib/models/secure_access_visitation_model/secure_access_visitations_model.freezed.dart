@@ -32,6 +32,11 @@ mixin _$SecureAccessVisitationsModel {
   String? get date => throw _privateConstructorUsedError;
   String? get unit => throw _privateConstructorUsedError;
   String? get time => throw _privateConstructorUsedError;
+  String? get month => throw _privateConstructorUsedError;
+  String? get timeStamp => throw _privateConstructorUsedError;
+  String? get outDate => throw _privateConstructorUsedError;
+  String? get outTime => throw _privateConstructorUsedError;
+  String? get year => throw _privateConstructorUsedError;
   String? get id => throw _privateConstructorUsedError;
 
   /// Serializes this SecureAccessVisitationsModel to a JSON map.
@@ -64,6 +69,11 @@ abstract class $SecureAccessVisitationsModelCopyWith<$Res> {
       String? date,
       String? unit,
       String? time,
+      String? month,
+      String? timeStamp,
+      String? outDate,
+      String? outTime,
+      String? year,
       String? id});
 }
 
@@ -94,6 +104,11 @@ class _$SecureAccessVisitationsModelCopyWithImpl<$Res,
     Object? date = freezed,
     Object? unit = freezed,
     Object? time = freezed,
+    Object? month = freezed,
+    Object? timeStamp = freezed,
+    Object? outDate = freezed,
+    Object? outTime = freezed,
+    Object? year = freezed,
     Object? id = freezed,
   }) {
     return _then(_value.copyWith(
@@ -141,6 +156,26 @@ class _$SecureAccessVisitationsModelCopyWithImpl<$Res,
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as String?,
+      month: freezed == month
+          ? _value.month
+          : month // ignore: cast_nullable_to_non_nullable
+              as String?,
+      timeStamp: freezed == timeStamp
+          ? _value.timeStamp
+          : timeStamp // ignore: cast_nullable_to_non_nullable
+              as String?,
+      outDate: freezed == outDate
+          ? _value.outDate
+          : outDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      outTime: freezed == outTime
+          ? _value.outTime
+          : outTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+      year: freezed == year
+          ? _value.year
+          : year // ignore: cast_nullable_to_non_nullable
+              as String?,
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -170,6 +205,11 @@ abstract class _$$SecureAccessVisitationsModelImplCopyWith<$Res>
       String? date,
       String? unit,
       String? time,
+      String? month,
+      String? timeStamp,
+      String? outDate,
+      String? outTime,
+      String? year,
       String? id});
 }
 
@@ -199,6 +239,11 @@ class __$$SecureAccessVisitationsModelImplCopyWithImpl<$Res>
     Object? date = freezed,
     Object? unit = freezed,
     Object? time = freezed,
+    Object? month = freezed,
+    Object? timeStamp = freezed,
+    Object? outDate = freezed,
+    Object? outTime = freezed,
+    Object? year = freezed,
     Object? id = freezed,
   }) {
     return _then(_$SecureAccessVisitationsModelImpl(
@@ -246,6 +291,26 @@ class __$$SecureAccessVisitationsModelImplCopyWithImpl<$Res>
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as String?,
+      month: freezed == month
+          ? _value.month
+          : month // ignore: cast_nullable_to_non_nullable
+              as String?,
+      timeStamp: freezed == timeStamp
+          ? _value.timeStamp
+          : timeStamp // ignore: cast_nullable_to_non_nullable
+              as String?,
+      outDate: freezed == outDate
+          ? _value.outDate
+          : outDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      outTime: freezed == outTime
+          ? _value.outTime
+          : outTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+      year: freezed == year
+          ? _value.year
+          : year // ignore: cast_nullable_to_non_nullable
+              as String?,
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -271,6 +336,11 @@ class _$SecureAccessVisitationsModelImpl
       required this.date,
       required this.unit,
       required this.time,
+      required this.month,
+      required this.timeStamp,
+      required this.outDate,
+      required this.outTime,
+      required this.year,
       required this.id});
 
   factory _$SecureAccessVisitationsModelImpl.fromJson(
@@ -300,11 +370,21 @@ class _$SecureAccessVisitationsModelImpl
   @override
   final String? time;
   @override
+  final String? month;
+  @override
+  final String? timeStamp;
+  @override
+  final String? outDate;
+  @override
+  final String? outTime;
+  @override
+  final String? year;
+  @override
   final String? id;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SecureAccessVisitationsModel(identificationsNumber: $identificationsNumber, identificationType: $identificationType, firstName: $firstName, middleName: $middleName, lastName: $lastName, transportationType: $transportationType, mobileNumber: $mobileNumber, email: $email, date: $date, unit: $unit, time: $time, id: $id)';
+    return 'SecureAccessVisitationsModel(identificationsNumber: $identificationsNumber, identificationType: $identificationType, firstName: $firstName, middleName: $middleName, lastName: $lastName, transportationType: $transportationType, mobileNumber: $mobileNumber, email: $email, date: $date, unit: $unit, time: $time, month: $month, timeStamp: $timeStamp, outDate: $outDate, outTime: $outTime, year: $year, id: $id)';
   }
 
   @override
@@ -323,6 +403,11 @@ class _$SecureAccessVisitationsModelImpl
       ..add(DiagnosticsProperty('date', date))
       ..add(DiagnosticsProperty('unit', unit))
       ..add(DiagnosticsProperty('time', time))
+      ..add(DiagnosticsProperty('month', month))
+      ..add(DiagnosticsProperty('timeStamp', timeStamp))
+      ..add(DiagnosticsProperty('outDate', outDate))
+      ..add(DiagnosticsProperty('outTime', outTime))
+      ..add(DiagnosticsProperty('year', year))
       ..add(DiagnosticsProperty('id', id));
   }
 
@@ -349,6 +434,12 @@ class _$SecureAccessVisitationsModelImpl
             (identical(other.date, date) || other.date == date) &&
             (identical(other.unit, unit) || other.unit == unit) &&
             (identical(other.time, time) || other.time == time) &&
+            (identical(other.month, month) || other.month == month) &&
+            (identical(other.timeStamp, timeStamp) ||
+                other.timeStamp == timeStamp) &&
+            (identical(other.outDate, outDate) || other.outDate == outDate) &&
+            (identical(other.outTime, outTime) || other.outTime == outTime) &&
+            (identical(other.year, year) || other.year == year) &&
             (identical(other.id, id) || other.id == id));
   }
 
@@ -367,6 +458,11 @@ class _$SecureAccessVisitationsModelImpl
       date,
       unit,
       time,
+      month,
+      timeStamp,
+      outDate,
+      outTime,
+      year,
       id);
 
   /// Create a copy of SecureAccessVisitationsModel
@@ -401,6 +497,11 @@ abstract class _SecureAccessVisitationsModel
       required final String? date,
       required final String? unit,
       required final String? time,
+      required final String? month,
+      required final String? timeStamp,
+      required final String? outDate,
+      required final String? outTime,
+      required final String? year,
       required final String? id}) = _$SecureAccessVisitationsModelImpl;
 
   factory _SecureAccessVisitationsModel.fromJson(Map<String, dynamic> json) =
@@ -428,6 +529,16 @@ abstract class _SecureAccessVisitationsModel
   String? get unit;
   @override
   String? get time;
+  @override
+  String? get month;
+  @override
+  String? get timeStamp;
+  @override
+  String? get outDate;
+  @override
+  String? get outTime;
+  @override
+  String? get year;
   @override
   String? get id;
 

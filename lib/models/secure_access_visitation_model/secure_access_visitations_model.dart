@@ -18,6 +18,11 @@ class SecureAccessVisitationsModel with _$SecureAccessVisitationsModel {
     required String? date,
     required String? unit,
     required String? time,
+    required String? month,
+    required String? timeStamp,
+    required String? outDate,
+    required String? outTime,
+    required String? year,
     required String? id
   }) = _SecureAccessVisitationsModel;
 

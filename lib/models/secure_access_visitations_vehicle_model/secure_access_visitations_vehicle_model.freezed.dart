@@ -29,6 +29,7 @@ mixin _$SecureAccessVisitationsVehicleModel {
   String? get expiryYear => throw _privateConstructorUsedError;
   String? get make => throw _privateConstructorUsedError;
   String? get model => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
   String? get identificationNumber => throw _privateConstructorUsedError;
   String? get date => throw _privateConstructorUsedError;
   String? get unit => throw _privateConstructorUsedError;
@@ -68,6 +69,7 @@ abstract class $SecureAccessVisitationsVehicleModelCopyWith<$Res> {
       String? expiryYear,
       String? make,
       String? model,
+      String? id,
       String? identificationNumber,
       String? date,
       String? unit,
@@ -104,6 +106,7 @@ class _$SecureAccessVisitationsVehicleModelCopyWithImpl<$Res,
     Object? expiryYear = freezed,
     Object? make = freezed,
     Object? model = freezed,
+    Object? id = freezed,
     Object? identificationNumber = freezed,
     Object? date = freezed,
     Object? unit = freezed,
@@ -147,6 +150,10 @@ class _$SecureAccessVisitationsVehicleModelCopyWithImpl<$Res,
       model: freezed == model
           ? _value.model
           : model // ignore: cast_nullable_to_non_nullable
+              as String?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
               as String?,
       identificationNumber: freezed == identificationNumber
           ? _value.identificationNumber
@@ -210,6 +217,7 @@ abstract class _$$SecureAccessVisitationsVehicleModelImplCopyWith<$Res>
       String? expiryYear,
       String? make,
       String? model,
+      String? id,
       String? identificationNumber,
       String? date,
       String? unit,
@@ -245,6 +253,7 @@ class __$$SecureAccessVisitationsVehicleModelImplCopyWithImpl<$Res>
     Object? expiryYear = freezed,
     Object? make = freezed,
     Object? model = freezed,
+    Object? id = freezed,
     Object? identificationNumber = freezed,
     Object? date = freezed,
     Object? unit = freezed,
@@ -288,6 +297,10 @@ class __$$SecureAccessVisitationsVehicleModelImplCopyWithImpl<$Res>
       model: freezed == model
           ? _value.model
           : model // ignore: cast_nullable_to_non_nullable
+              as String?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
               as String?,
       identificationNumber: freezed == identificationNumber
           ? _value.identificationNumber
@@ -347,6 +360,7 @@ class _$SecureAccessVisitationsVehicleModelImpl
       required this.expiryYear,
       required this.make,
       required this.model,
+      required this.id,
       required this.identificationNumber,
       required this.date,
       required this.unit,
@@ -379,6 +393,8 @@ class _$SecureAccessVisitationsVehicleModelImpl
   @override
   final String? model;
   @override
+  final String? id;
+  @override
   final String? identificationNumber;
   @override
   final String? date;
@@ -401,7 +417,7 @@ class _$SecureAccessVisitationsVehicleModelImpl
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SecureAccessVisitationsVehicleModel(engineNumber: $engineNumber, licenseNumber: $licenseNumber, regNumber: $regNumber, description: $description, vinNumber: $vinNumber, expiryYear: $expiryYear, make: $make, model: $model, identificationNumber: $identificationNumber, date: $date, unit: $unit, color: $color, outTime: $outTime, outDate: $outDate, time: $time, year: $year, month: $month, timeStamp: $timeStamp)';
+    return 'SecureAccessVisitationsVehicleModel(engineNumber: $engineNumber, licenseNumber: $licenseNumber, regNumber: $regNumber, description: $description, vinNumber: $vinNumber, expiryYear: $expiryYear, make: $make, model: $model, id: $id, identificationNumber: $identificationNumber, date: $date, unit: $unit, color: $color, outTime: $outTime, outDate: $outDate, time: $time, year: $year, month: $month, timeStamp: $timeStamp)';
   }
 
   @override
@@ -417,6 +433,7 @@ class _$SecureAccessVisitationsVehicleModelImpl
       ..add(DiagnosticsProperty('expiryYear', expiryYear))
       ..add(DiagnosticsProperty('make', make))
       ..add(DiagnosticsProperty('model', model))
+      ..add(DiagnosticsProperty('id', id))
       ..add(DiagnosticsProperty('identificationNumber', identificationNumber))
       ..add(DiagnosticsProperty('date', date))
       ..add(DiagnosticsProperty('unit', unit))
@@ -448,6 +465,7 @@ class _$SecureAccessVisitationsVehicleModelImpl
                 other.expiryYear == expiryYear) &&
             (identical(other.make, make) || other.make == make) &&
             (identical(other.model, model) || other.model == model) &&
+            (identical(other.id, id) || other.id == id) &&
             (identical(other.identificationNumber, identificationNumber) ||
                 other.identificationNumber == identificationNumber) &&
             (identical(other.date, date) || other.date == date) &&
@@ -464,26 +482,28 @@ class _$SecureAccessVisitationsVehicleModelImpl
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      engineNumber,
-      licenseNumber,
-      regNumber,
-      description,
-      vinNumber,
-      expiryYear,
-      make,
-      model,
-      identificationNumber,
-      date,
-      unit,
-      color,
-      outTime,
-      outDate,
-      time,
-      year,
-      month,
-      timeStamp);
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        engineNumber,
+        licenseNumber,
+        regNumber,
+        description,
+        vinNumber,
+        expiryYear,
+        make,
+        model,
+        id,
+        identificationNumber,
+        date,
+        unit,
+        color,
+        outTime,
+        outDate,
+        time,
+        year,
+        month,
+        timeStamp
+      ]);
 
   /// Create a copy of SecureAccessVisitationsVehicleModel
   /// with the given fields replaced by the non-null parameter values.
@@ -514,6 +534,7 @@ abstract class _SecureAccessVisitationsVehicleModel
           required final String? expiryYear,
           required final String? make,
           required final String? model,
+          required final String? id,
           required final String? identificationNumber,
           required final String? date,
           required final String? unit,
@@ -546,6 +567,8 @@ abstract class _SecureAccessVisitationsVehicleModel
   String? get make;
   @override
   String? get model;
+  @override
+  String? get id;
   @override
   String? get identificationNumber;
   @override
