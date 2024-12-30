@@ -33,7 +33,7 @@ mixin _$SecureAccessVisitationsModel {
   String? get unit => throw _privateConstructorUsedError;
   String? get time => throw _privateConstructorUsedError;
   String? get month => throw _privateConstructorUsedError;
-  String? get timeStamp => throw _privateConstructorUsedError;
+  DateTime? get timeStamp => throw _privateConstructorUsedError;
   String? get outDate => throw _privateConstructorUsedError;
   String? get outTime => throw _privateConstructorUsedError;
   String? get year => throw _privateConstructorUsedError;
@@ -70,7 +70,7 @@ abstract class $SecureAccessVisitationsModelCopyWith<$Res> {
       String? unit,
       String? time,
       String? month,
-      String? timeStamp,
+      DateTime? timeStamp,
       String? outDate,
       String? outTime,
       String? year,
@@ -163,7 +163,7 @@ class _$SecureAccessVisitationsModelCopyWithImpl<$Res,
       timeStamp: freezed == timeStamp
           ? _value.timeStamp
           : timeStamp // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       outDate: freezed == outDate
           ? _value.outDate
           : outDate // ignore: cast_nullable_to_non_nullable
@@ -206,7 +206,7 @@ abstract class _$$SecureAccessVisitationsModelImplCopyWith<$Res>
       String? unit,
       String? time,
       String? month,
-      String? timeStamp,
+      DateTime? timeStamp,
       String? outDate,
       String? outTime,
       String? year,
@@ -298,7 +298,7 @@ class __$$SecureAccessVisitationsModelImplCopyWithImpl<$Res>
       timeStamp: freezed == timeStamp
           ? _value.timeStamp
           : timeStamp // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       outDate: freezed == outDate
           ? _value.outDate
           : outDate // ignore: cast_nullable_to_non_nullable
@@ -372,7 +372,7 @@ class _$SecureAccessVisitationsModelImpl
   @override
   final String? month;
   @override
-  final String? timeStamp;
+  final DateTime? timeStamp;
   @override
   final String? outDate;
   @override
@@ -498,7 +498,7 @@ abstract class _SecureAccessVisitationsModel
       required final String? unit,
       required final String? time,
       required final String? month,
-      required final String? timeStamp,
+      required final DateTime? timeStamp,
       required final String? outDate,
       required final String? outTime,
       required final String? year,
@@ -532,7 +532,7 @@ abstract class _SecureAccessVisitationsModel
   @override
   String? get month;
   @override
-  String? get timeStamp;
+  DateTime? get timeStamp;
   @override
   String? get outDate;
   @override

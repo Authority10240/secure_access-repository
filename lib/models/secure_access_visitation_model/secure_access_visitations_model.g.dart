@@ -21,7 +21,9 @@ _$SecureAccessVisitationsModelImpl _$$SecureAccessVisitationsModelImplFromJson(
       unit: json['unit'] as String?,
       time: json['time'] as String?,
       month: json['month'] as String?,
-      timeStamp: json['timeStamp'] as String?,
+      timeStamp: json['timeStamp'] == null
+          ? null
+          : DateTime.parse(json['timeStamp'] as String),
       outDate: json['outDate'] as String?,
       outTime: json['outTime'] as String?,
       year: json['year'] as String?,
@@ -43,7 +45,7 @@ Map<String, dynamic> _$$SecureAccessVisitationsModelImplToJson(
       'unit': instance.unit,
       'time': instance.time,
       'month': instance.month,
-      'timeStamp': instance.timeStamp,
+      'timeStamp': instance.timeStamp?.toIso8601String(),
       'outDate': instance.outDate,
       'outTime': instance.outTime,
       'year': instance.year,
